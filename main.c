@@ -4,15 +4,18 @@
 
 int main ()
 {
-    //handle_t does_not_compile;
+    //
+    // struct type handle
+    //
+    //struct_handle_t does_not_compile;
 
-    handle_t* h = lib_struct_create_handle();
+    struct_handle_t* hs = lib_struct_create_handle();
 
-    lib_struct_set_value(h, 42);
+    lib_struct_set_value(hs, 42);
 
-    printf("handle value is %d\n", lib_struct_get_value(h));
+    printf("struct handle value is %d\n", lib_struct_get_value(hs));
 
-    lib_struct_destroy_handle(h);
+    lib_struct_destroy_handle(hs);
 
     return 0;
 }
